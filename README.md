@@ -1,2 +1,2 @@
-# FP
+# Foundations of Programming
  
