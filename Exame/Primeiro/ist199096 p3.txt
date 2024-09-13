@@ -1,0 +1,126 @@
+
+######## PARTE 3 - PERGUNTA 1 (1 val.) ##############################
+Escreva a função de dois argumentos, mantem_multiplos, que recebe uma lista de 
+inteiros e um inteiro e que devolve a lista que resulta de remover da lista 
+original todos os elementos que não são múltiplos do segundo argumento.
+A remoção deve ser feita de modo não destrutiva.
+Não é necessário validar os dados de entrada.
+Por exemplo:
+>>> mantem_multiplos([2, 3, 4, 5, 7, 8], 2)
+[2, 4, 8]------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------
+
+######## PARTE 3 - PERGUNTA 2 (1 val.) ##############################
+Escreva a função apenas_digitos_pares que recebe um número inteiro não negativo 
+n, e devolve um inteiro composto apenas pelos dígitos pares de n. Se n não 
+tiver dígitos pares, a função deve devolver zero.
+Não pode usar cadeias de caracteres.
+Não é necessário validar os dados de entrada.
+Por exemplo:
+>>> apenas_digitos_pares(664426383905433)
+664426804------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------
+
+######## PARTE 3 - PERGUNTA 3 (2 val.) ##############################
+Defina a classe piscina que simula o comportamento de uma piscina pública. 
+A piscina tem uma lotação máxima e uma tarifa, de acordo com a seguinte regra: 
+€2 fixo inicial mais €0.5 por cada hora ou fração, com um custo máximo de €5. 
+Por exemplo, se uma pessoa estiver 3 horas e 20 minutos na piscina irá pagar € 
+4.00 (€2 iniciais, mais € 1,50 pelas primeiras 3 horas e 0,5 pela fração 
+seguinte).
+Assuma que sempre que se acede à piscina o BI da pessoa que entra é associado à 
+hora em que entrou (horas e minutos).
+Não se considera a data de entrada pois todos os banhistas são expulso à meia 
+noite. Sempre que se sai da piscina é indicada a hora de saída e calcula-se a 
+quantia a pagar.
+As instâncias desta classe são criadas indicando a lotação máxima da piscina. 
+Os métodos disponíveis são os seguintes:
+
+- entra(bi, h, m) regista que a pessoa identificada pelo seu bi como uma cadeia 
+de carateres entrou na piscina às h horas e m minutos. Este método verifica a 
+legalidade das horas e minutos de entrada e devolve o número de pessoas na 
+piscina. Se a piscina estiver sem lugares livres gera uma mensagem. Se uma 
+pessoa com o mesmo BI já estiver na piscina, gera uma mensagem e a pessoa não 
+entra.
+- sai(bi, h, m) regista que o pessoa com BI bi saiu da piscina às h horas e m 
+minutos. Este método verifica a legalidade das horas e minutos de saída, 
+comparando-a com as horas e minutos de entrada. Devolve o valor a pagar. Se a 
+piscina estiver vazia gera uma mensagem. Se o pessoa com o BI não estiver na 
+piscina, gera uma mensagem.
+- ocupacao() devolve o número de pessoas dentro da pisina.
+
+Por exemplo:
+>>> p = piscina(3)
+>>> p.entra('5555555', 5, 12)
+1
+>>> p.entra('5555555', 12, 30)
+'entra: a pessoa está na piscina'
+>>> p.sai('5555555', 5, 10)
+'sai: horas erradas'
+>>> p.entra('6666666', 9, 27)
+2
+>>> p.entra('7777777', 9, 27)
+3
+>>> p.entra('8888888', 9, 27)
+'entra: piscina cheia'
+>>> p.ocupacao()
+3
+>>> p.sai('7777777', 10, 37)
+'valor a pagar: Euro 3.0'
+>>> p.sai('5555555', 17, 35)
+'valor a pagar: Euro 5.0'------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------
+
+######## PARTE 3 - PERGUNTA 4 (1 val.) ##############################
+Usando um ou mais dos funcionais sobre listas (filtra, transforma, acumula), 
+escreva a função todos_lista que recebe uma lista e um predicado unário, e 
+devolve verdadeiro caso todos os elementos da lista satisfaçam o predicado e 
+falso em caso contrário. 
+A sua função deve conter apenas uma instrução, a instrução return.
+Não é necessário validar os dados de entrada.
+Por exemplo:
+>>> todos_lista([4, 5, 6], lambda x: x > 5)
+False
+>>> todos_lista([4, 5, 6], lambda x: x >= 4)
+True------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------

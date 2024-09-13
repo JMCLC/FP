@@ -1,0 +1,120 @@
+
+######## PARTE 1 - PERGUNTA 1 (3 val.) ##############################
+Uma árvore binária é um tipo de dados que corresponde a uma estrutura 
+hierárquica. Uma árvore binária ou é vazia ou é constituída por uma raiz que 
+domina duas árvores binárias, a árvore esquerda e a árvore direita.
+
+O tipo árvore binária tem as seguintes operações básicas, as quais se referem 
+ao tipo elemento que corresponde ao tipo dos elementos da raiz:
+Construtores:
+ - nova_arv(): tem como valor uma árvore vazia.
+ - cria_arv(r, ae, ad), em que r é do tipo elemento e ae e ad são árvores 
+ binárias. Tem como valor a árvore binária com raiz r, com árvore esquerda ae e 
+ com árvore direita ad.
+
+Seletores:
+ - raiz(a), recebe uma árvore binária, a, e tem como valor a sua raiz. Se a 
+ árvore for vazia, o valor desta função é indefinido.
+ - arv_esq(a), recebe uma árvore binária, a, e tem como valor a sua árvore 
+ esquerda. Se a árvore for vazia, o valor desta operação é indefinido.
+ - arv_dir(a), recebe uma árvore binária, a, e tem como valor a sua árvore 
+ direita. Se a árvorefor vazia, o valor desta operação é indefinido.
+
+Reconhecedores:
+ - eh_arv(arg), recebe como argumento um elemento de um tipo qualquer e decide 
+ se este pertence ou não ao tipo árvore binária.
+ - eh_arv_vazia(a), recebe uma árvore binária, a, e tem o valor verdadeiro se a 
+ é uma árvore vazia e tem o valor falso, em caso contrário.
+
+Não consideramos testes nas operações básicas.
+a) Escolha uma representação para árvores binárias
+
+b) Escreva as operações básicas em termos da sua representação
+
+c) Escreva o predicado arv_iguais que recebe duas árvores binárias e devolve 
+verdadeiro apenas se as árvores recebidas são iguais. Duas árvores são iguais, 
+se forem ambas vazias ou se tiverem a mesma raiz e as árvores esquerda e 
+direita forem recursivamente iguais.
+------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------
+
+######## PARTE 1 - PERGUNTA 2 (1.5 val.) ##############################
+Usando palavras suas e, no máximo, em três linhas explique os seguintes 
+conceitos.
+Explicações dadas através de exemplos serão classificadas com zero valores.
+
+a) Tipo de dados.
+
+b) Visibilidade de um nome.
+
+c) Objeto.------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------
+
+######## PARTE 1 - PERGUNTA 3 (2 val.) ##############################
+Considere a linguagem cujas frases começam pelo símbolo 'a', o qual é seguido 
+por qualquer número de ocorrências do símbolo 'b' (ou 'c') seguido do mesmo 
+número de ocorrências do símbolo 'c' (ou 'b'), e terminam no símbolo 'd'.
+Por exemplo 'abbbcccd' e 'accbbd' são frases da linguagem, 'ad' e 'abcbcd' não 
+o são.
+
+a) Escreva uma gramática em notação BNF para a linguagem apresentada.
+
+b) Escreva o predicado reconhece que recebe como argumento uma cadeia de 
+caracteres e devolve verdadeiro apenas se a cadeia de caracteres pertence à 
+linguagem. O predicado gera um erro se o seu argumento não for uma cadeia de 
+caracteres.------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------
+
+######## PARTE 1 - PERGUNTA 4 (1.5 val.) ##############################
+Escreva uma função que recebe um número inteiro positivo e que calcula uma 
+codificação para esse número do seguinte modo:
+- a ordem dos algarismos do número é invertida;
+- cada algarismo ímpar é substituído pelo ímpar seguinte, entendendo-se que o 
+ímpar seguinte a 9 é 1;
+- cada algarismo par é substituído pelo par anterior, entendendo-se que o par 
+anterior a 0 é 8.
+Caso o argumento não esteja correto, deverá gerar um erro com o texto 
+'Argumento invalido'. Por exemplo:
+>>> codifica(1234567890)
+8169472503------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------

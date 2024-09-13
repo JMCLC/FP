@@ -1,0 +1,88 @@
+
+######## PARTE 2 - PERGUNTA 1 (2 val.) ##############################
+Escreva a função soma_dicionarios que recebe dois dicionários, cujos valores 
+associados às chaves correspondem a listas, e devolve o dicionário que contém 
+todas as chaves contidas em pelo menos um dos dicionários e o valor associado a 
+cada chave corresponde à lista obtida pela união (no sentido de conjuntos) das 
+listas correspondendo às chaves existentes nos dicionários.
+Por exemplo:
+>>> d1 = {'a' : [1, 2], 'b' : [3, 4]}
+>>> d2 = {'b' : [4, 5], 'c' : [6, 7]}
+>>> soma_dicionarios (d1, d2)
+{'a': [1, 2], 'b': [3, 4, 5], 'c': [6, 7]}------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------
+
+######## PARTE 2 - PERGUNTA 2 (3 val.) ##############################
+Suponha que existe predicado de um argumento eh_primo, que recebe um número 
+natural e devolve verdadeiro apenas se o seu argumento é um número primo.
+Escreva a função soma_divisores_primos que recebe um número inteiro positivo n, 
+e devolve a soma dos seus divisores primos.
+As suas funções não podem usar cadeias de caracteres.
+Não necessita de verificar a validade dos argumentos.
+No caso de n ser 0 deverá devolver 0.
+Por exemplo:
+>>> soma_divisores_primos (20)
+2
+>>> soma_divisores_primos (13)
+1
+
+a) Usando recursão com operações adiadas (não pode utilizar a atribuição nem os 
+ciclos while e for). 
+
+b) Usando recursão de cauda (não pode utilizar a atribuição nem os ciclos while 
+e for). 
+
+c) Usando um processo iterativo.------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------
+
+######## PARTE 2 - PERGUNTA 3 (2 val.) ##############################
+Suponha que existe a função de um argumento n_esimo_primo, que recebe um 
+natural e devolve o número primo cuja posição corresponde ao seu argumento.
+Por exemplo n_esimo_primo(1) devolve 2, n_esimo_primo(2) devolve 3, 
+n_esimo_primo(3) devolve 5, e assim sucessivamente.
+
+(a) Escreva a função codifica_lista_numeros que recebe como argumento uma lista 
+de números naturais correspondentes a uma codificação de palavras e devolve a 
+um número natural correspondente codificação dessas palavras usando os números 
+de Gödel. Uma lista com n elementos correspondente a codificação de palavras, 
+[p1, p2, ..., pn], codificada usando os números de Gödel corresponde ao inteiro 
+2**p1*3**p2* ... *n_esimo_primo(n)**pn.
+Por exemplo a lista [5663445, 9996543, 555432099] é codificada como 
+2**5663445*3**9996543*5**555432099.
+Não é necessário validar os dados de entrada.
+
+(b) Escreva a função descodifica_lista_numeros que recebe como argumento um 
+natural correspondente a uma lista de números codificada usando os números de 
+Gödel e devolve a lista original.
+Não é necessário validar o argumento da sua função.------------------- RESPOSTA - INICIO ----------------------
+
+
+
+
+
+
+
+
+
+
+------------------- RESPOSTA - FIM -------------------------
